@@ -22,8 +22,8 @@ component =
   render state =
     HH.div_
       [ HH.button [ HE.onClick \_ -> Decrement ] [ HH.text "-" ]
-      , HH.text (show state)
-      , HH.button [ HE.onClick \_ -> Increment ] [ HH.text "*" ]
+      , HH.p_ [ HH.text (show state) ]
+      , HH.button [ HE.onClick \_ -> Increment ] [ HH.text "+" ]
       ]
 
   handleAction = case _ of
